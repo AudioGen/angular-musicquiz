@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="musicQuizApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Open Trivia DB</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="music-app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.module.js"></script>
+    <!--
+    <script src="music-quiz/music-quiz.module.js"></script>
+    <script src="music-quiz/music-quiz.component.js"></script>
+    -->
+  </head>
+  <body ng-controller = "musicQuizControlller">
+
+    <ul>
+      <li ng-repeat = "quiz in quizzes">
+        <span>{{quiz.question}}</span>
+        <p>{{quiz.answer}}</p>
+        </li>
+    </ul>
+ 
+    <p>Here is a sentence that works </p>
+
+
+    <!-- Use a custom component to render a list of phones 
+    <music-quiz></music-quiz>
+
+    -->
+
+  </body>
+</html>
